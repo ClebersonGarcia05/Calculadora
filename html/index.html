@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo">Faça sua conta aqui</h1>
+    </header>
+    <main id="main">
+        <div id="calc">
+            <div>
+                <h4 id="res"></h4>
+            </div>
+            <div id="teclado">
+                <ul class="conjunto botoes">
+                    <button class="nove" onclick="insert('9')" onkeypress="insert('9')">9</button>
+                    <button class="oito" onclick="insert('8')">8</button>
+                    <button class="sete" onclick="insert('7')">7</button>
+                    <button class="seis" onclick="insert('6')">6</button>
+                    <button class="cinco" onclick="insert('5')">5</button>
+                    <button class="quatro" onclick="insert('4')">4</button>
+                    <button class="tres" onclick="insert('3')">3</button>
+                    <button class="dois" onclick="insert('2')">2</button>
+                    <button class="um" onclick="insert('1')">1</button>
+                    <button class="zero" onclick="insert('0')">0</button>
+                    <button class="reset" onclick="clean()">C</button>
+                    <button class="somar" onclick="insert('+')">+</button>
+                    <button class="resultado" onclick="calcular()">=</button>
+                    <button class="subtrair" onclick="insert('-')">-</button>
+                    <button class="multiplicar" onclick="insert('*')">x</button>
+                    <button class="dividir" onclick="insert('/')">/</button>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
